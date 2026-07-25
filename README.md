@@ -6,3 +6,5 @@ I learned how to add **images, links, lists, and tables** in HTML. I practiced u
 
 **Day 3**:
 I learned about **HTML forms, input fields, labels, buttons, and semantic HTML**. I learned how to collect user information using different input types such as text, email, password, phone number, date of birth, and gender. I also learned how semantic HTML makes webpages more organized and meaningful. As a practice project, I created a Student Registration Form with all the required fields and a submit button.
+**Day 4:**
+I learned about **CSS**, including **colors, fonts, backgrounds, and borders**. I learned how to change text colors, use different font styles and sizes, apply background colors and images, and add borders to elements. As a practice project, I made yesterday's Student Registration Form more beautiful by styling it with CSS using colors, fonts, backgrounds, and borders.
