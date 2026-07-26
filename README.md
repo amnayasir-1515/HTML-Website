@@ -9,3 +9,6 @@ I learned about **HTML forms, input fields, labels, buttons, and semantic HTML**
 
 **Day 4:**
 I learned about **CSS**, including **colors, fonts, backgrounds, and borders**. I learned how to change text colors, use different font styles and sizes, apply background colors and images, and add borders to elements. As a practice project, I made yesterday's Student Registration Form more beautiful by styling it with CSS using colors, fonts, backgrounds, and borders.
+
+**Day 5:**
+I learned about **CSS properties**, including **margin, padding, width, and height**. I learned how to create space outside an element using **margin,** add space inside an element using **padding,** set the **width** of elements, and adjust their **height**. As a practice project, I applied these properties to my Student Registration Form to improve its layout, spacing, and overall appearance.
