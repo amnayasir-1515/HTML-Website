@@ -12,3 +12,6 @@ I learned about **CSS**, including **colors, fonts, backgrounds, and borders**. 
 
 **Day 5:**
 I learned about **CSS properties**, including **margin, padding, width, and height**. I learned how to create space outside an element using **margin,** add space inside an element using **padding,** set the **width** of elements, and adjust their **height**. As a practice project, I applied these properties to my Student Registration Form to improve its layout, spacing, and overall appearance.
+
+**Day 6:**
+I learned about **CSS Display** and **Flexbox**. I learned how the **display** property controls the layout of HTML elements and how **Flexbox** makes it easy to arrange items in rows or columns. I also learned how to align and space elements using properties like **justify-content**, **align-items**, and **gap**. As a practice project, I created a webpage with multiple boxes and arranged them in a single row using Flexbox to make the layout more organized and responsive.
