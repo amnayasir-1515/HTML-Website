@@ -15,3 +15,6 @@ I learned about **CSS properties**, including **margin, padding, width, and heig
 
 **Day 6:**
 I learned about **CSS Display** and **Flexbox**. I learned how the **display** property controls the layout of HTML elements and how **Flexbox** makes it easy to arrange items in rows or columns. I also learned how to align and space elements using properties like **justify-content**, **align-items**, and **gap**. As a practice project, I created a webpage with multiple boxes and arranged them in a single row using Flexbox to make the layout more organized and responsive.
+
+**Day 7:**
+I learned about **CSS Hover, Buttons, and Responsive Basics**. I learned how to use the **:hover** pseudo-class to change the appearance of elements when the mouse pointer is placed over them. I also learned how to style buttons using CSS and create responsive layouts with **media queries** so that webpages look good on different screen sizes. As a practice project, I created a styled button with a hover effect and made a simple responsive webpage.
