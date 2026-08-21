@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NETFLIX Landing Page</title>
+    <link rel="stylesheet" href="41-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="top-banner">
+      <i class="fa-solid fa-gift"></i>
+      <span>New to Netflix? Try 7 days for Rs 0.</span>
+    </div>
+    <header class="header">
+      <!-- Logo -->
+      <img src="netflix.png" alt="Netflix Logo" class="netflix-logo" />
+      <!--Right-->
+      <div class="header-right">
+        <a href="https://www.netflix.com/pk/login" class="sign-in">Sign In</a>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Unlimited movies, TV <br />shows and more</h1>
+        <h2>plans start at Rs 250. Cancel anytime</h2>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="email-box">
+          <input type="email" placeholder="Email address" />
+          <a
+            href="https://www.netflix.com/signup?serverState=BgigvevcAxLTAUWcQFgdlTsunbNfHsLYMmHKdRoOmXhrCEEFLtcR3xncdTAcIdYtbpMXJoupBWSIRVoxOnb6jJAZxylZsIi9%2BxxkMFN2x4ToB4aZuIfipTKbJYPlS5%2BcQO5hHZft8v%2FgtAycyefyL753143q6t9S8uYHLwFwN0y36XhWnlEJUf9Me%2BkGYupoJVUn0yT3agsqkYfg5K3I5pJ1bmykPKFUBCNwIOuXutn56xkSczc8lKc%2BDfTiLWwLFJdBhA7Mz%2BBtHXEEJXuXs1jCHWrOEYQmaQjq728YBiIOCgzPK%2Fax3831C1VUM8w%3D"
+            target="_blank"
+          >
+            <button class="trial-button">
+              Try 7 Days for PKR 0 <span>›</span>
+            </button>
+          </a>
+          <p>New members only.Terms below</p>
+        </div>
+      </div>
+      <div class="hero-line">
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none">
+          <defs>
+            <!-- Blue shadow -->
+            <filter id="blueGlow" x="-20%" y="-200%" width="140%" height="500%">
+              <feGaussianBlur stdDeviation="15" />
+            </filter>
+
+            <!-- Red gradient line -->
+            <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#8b1538" stop-opacity="0.45" />
+              <stop offset="20%" stop-color="#c9184a" stop-opacity="0.75" />
+              <stop offset="50%" stop-color="#ff1744" stop-opacity="2" />
+              <stop offset="80%" stop-color="#c9184a" stop-opacity="0.75" />
+              <stop offset="100%" stop-color="#8b1538" stop-opacity="0.45" />
+            </linearGradient>
+          </defs>
+
+          <!-- Blue shadow -->
+          <path
+            d="M 0 34 Q 500 5 1000 34"
+            stroke="#304ffe"
+            stroke-width="28"
+            opacity="0.55"
+            fill="none"
+            filter="url(#blueGlow)"
+            transform="translate(0 40)"
+          ></path>
+
+          <!-- Red curved line -->
+          <path
+            d="M 0 70 Q 500 -10 1000 70"
+            stroke="url(#redLine)"
+            stroke-width="20"
+            fill="none"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section class="trending">
+      <h2>Trending Now</h2>
+      <div class="trending-container">
+        <div class="movie-card">
+          <span class="number">1</span>
+          <img
+            src="https://occ-0-3587-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdASUN6RmS_9Cz6RcM4PKxYy7dodzanPKLVynf3XovDr3AcakvtDLt5PVphbOEWfopc547BO194AXv3WsY4MT8efTOi8sjiEvY8.webp?r=873"
+            alt="Movie 1"
+          />
+        </div>
+        <div class="movie-card">
+          <span class="number">2</span>
+          <img
+            src="https://occ-0-3587-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABevqnI_ZIxXIbPg7e804EBWlJDu2WE9sPDLN-2r0maVzKVKijib7GQViWgcGDs4g2s1Nb-FHECqdukyTdxe_sBJ4IFjxVwdjopI.webp?r=ce9"
+            alt="Movie 2"
+          />
+        </div>
+        <div class="movie-card">
+          <span class="number">3</span>
+          <img
+            src="https://occ-0-3587-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABe9lWVq7kFsB38ZCuRRdq9eMuf90RdHx4rAhzSq-qSxQD4IpS-BBbTF5rGRRVAdNjEqPjD3Iw6E2EMseDvN-VV2V_8Ehj7ZzQ3DDlUNuSpoNNk6n-0XmyyTNA76xvta2kRvU.webp?r=267"
+            alt="Movie 3"
+          />
+        </div>
+        <div class="movie-card">
+          <span class="number">4</span>
+          <img
+            src="https://occ-0-3587-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQaZz6w4WN-xljuaOiyyPIV2iwoXVJyvgdJu-AvWezdhexhlDUNxIZmg8fk2m7ValjyQ563IfsRtuKYh5UhD6ovWtfNAVdNfkcc_2mKttwIg1F3H_6YFxWpRd6lS_F7mOorK.webp?r=279"
+            alt="Movie 4"
+          />
+        </div>
+        <div class="movie-card">
+          <span class="number">5</span>
+          <img
+            src="https://occ-0-3587-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABeMf38J8BfSwaPGwqyyH1bh9xRy5TTduGHkgRHOrPAWSQV2qLqJOyOPgTWpQS_X8sm08WbnzcHtnEWSF0lym_O6wWU6FSapo7A3VQelXKzOKywdsjcpFeuDxpeCvkZo95tyG.webp?r=a45"
+            alt="Movie 5"
+          />
+        </div>
+        <div class="movie-card">
+          <span class="number">6</span>
+          <img
+            src="https://occ-0-3587-64.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABV634RJ705XipxQXbUOmWTlPM6NMLGOMgv8O6-1mpxjUiHuGTO8aU_smM_58vn7E3eNAHVvWJq0PdI-Nfb186hH-lCfPKhOAdpg.webp?r=92a"
+            alt="Movie 6"
+          />
+        </div>
+        <button
+          class="next-btn"
+          onclick="window.open('https://www.netflix.com/', '_blank')"
+        >
+          &#8250;
+        </button>
+      </div>
+    </section>
+    <section class="reasons">
+      <h2>More Reasons to Join</h2>
+
+      <div class="reasons-container">
+        <div class="reason-card">
+          <div>
+            <h3>Enjoy on your TV</h3>
+            <p>
+              Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players, and more.
+            </p>
+          </div>
+          <i class="fa-solid fa-tv"></i>
+        </div>
+
+        <div class="reason-card">
+          <div>
+            <h3>Download your shows</h3>
+            <p>
+              Save your favorites easily and always have something to watch
+              offline.
+            </p>
+          </div>
+          <i class="fa-solid fa-download"></i>
+        </div>
+
+        <div class="reason-card">
+          <div>
+            <h3>Watch everywhere</h3>
+            <p>
+              Stream unlimited movies and TV shows on your phone, tablet, laptop
+              and TV.
+            </p>
+          </div>
+          <i class="fa-solid fa-rocket"></i>
+        </div>
+
+        <div class="reason-card">
+          <div>
+            <h3>Create profiles for kids</h3>
+            <p>
+              Send kids on adventures with their favorite characters in a space
+              made just for them.
+            </p>
+          </div>
+          <i class="fa-solid fa-face-smile"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <span>What is Netflix?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-item">
+          <span>How do I cancel?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-item">
+          <span>How much does Netflix cost?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-item">
+          <span>What can I watch on Netflix?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-item">
+          <span>Where can I watch?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-item">
+          <span>Is Netflix good for kids?</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </section>
+    <section class="email-section">
+      <p>Ready to watch? Enter your email to start your membership.</p>
+
+      <div class="email-form">
+        <input type="email" placeholder="Email address" />
+        <a
+          href="https://www.netflix.com/signup?serverState=BgigvevcAxLTAUWcQFgdlTsunbNfHsLYMmHKdRoOmXhrCEEFLtcR3xncdTAcIdYtbpMXJoupBWSIRVoxOnb6jJAZxylZsIi9%2BxxkMFN2x4ToB4aZuIfipTKbJYPlS5%2BcQO5hHZft8v%2FgtAycyefyL753143q6t9S8uYHLwFwN0y36XhWnlEJUf9Me%2BkGYupoJVUn0yT3agsqkYfg5K3I5pJ1bmykPKFUBCNwIOuXutn56xkSczc8lKc%2BDfTiLWwLFJdBhA7Mz%2BBtHXEEJXuXs1jCHWrOEYQmaQjq728YBiIOCgzPK%2Fax3831C1VUM8w%3D"
+          target="_blank"
+        >
+          <button>Try 7 Days for PKR 0 <span>›</span></button>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        This offer is only valid fpr new members. This offer is
+        non-transferrable.You agree that netflix will charge the membership fee
+        at the free trial to your payment method and will automatically continue
+        your membership until you cancel. Some method of payment may not be
+        eligible to redeem this offer.
+      </p>
+      <p class="contact-text">
+        Questions?
+        <a href="https://help.netflix.com/en/contactus">Contact us.</a>
+      </p>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <a href="https://help.netflix.com/en/node/412" target="_blank">FAQ</a>
+          <a href="https://ir.netflix.net/ir-overview/profile/default.aspx"
+            >Investor Relations</a
+          >
+          <a href="https://help.netflix.com/legal/privacy">Privacy</a>
+          <a href="https://fast.com/">Speed Test</a>
+        </div>
+
+        <div class="footer-column">
+          <a href="https://help.netflix.com/en">Help Center</a>
+          <a href="https://jobs.netflix.com/">Jobs</a>
+          <a href="https://www.netflix.com/pk/">Cookie Preferences</a>
+          <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+        </div>
+
+        <div class="footer-column">
+          <a
+            href="https://www.netflix.com/pk/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount"
+            >Account</a
+          >
+          <a href="https://help.netflix.com/en/node/14361">Ways to Watch</a>
+          <a href="https://help.netflix.com/en/node/134094"
+            >Corporate Information</a
+          >
+          <a href="https://www.netflix.com/pk/browse/genre/839338"
+            >Only on Netflix</a
+          >
+        </div>
+
+        <div class="footer-column">
+          <a href="https://media.netflix.com/en/">Media Center</a>
+          <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+          <a href="https://help.netflix.com/en/contactus">Contact Us</a>
+        </div>
+      </div>
+
+      <select class="language">
+        <option>English</option>
+        <option>Urdy</option>
+        <option>Spanish</option>
+        <option>French</option>
+        <option>German</option>
+      </select>
+
+      <p class="country">Netflix Pakistan</p>
+
+      <p class="captcha">
+        This page is protected by Google reCAPTCHA to ensure you're not a bot.
+      </p>
+    </footer>
+  </body>
+</html>
