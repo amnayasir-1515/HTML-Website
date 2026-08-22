@@ -2025,7 +2025,6 @@ html {
   .social-icons {
     gap: 7px;
     flex-wrap: nowrap;
-    allign-item:center;
   }
 
   .social-icons a {
