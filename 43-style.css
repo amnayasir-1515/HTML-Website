@@ -2024,7 +2024,8 @@ html {
 
   .social-icons {
     gap: 7px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    allign-item:center;
   }
 
   .social-icons a {
