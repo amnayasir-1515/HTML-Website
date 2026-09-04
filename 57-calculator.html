@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+  <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e8edf5;
+        font-family: arial, sans-serif;
+      }
+      .calculator {
+        width: 500px;
+        padding: 25px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+      h1 {
+        text-align: center;
+        margin-top: 0;
+        color: #333;
+      }
+      input {
+        width: 100%;
+        height: 50px;
+        padding: 12px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 18px;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      button {
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+
+        background: #2563eb;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1d4ed8;
+      }
+
+      .operator {
+        background: #555;
+      }
+      .operator:hover {
+        background: #333;
+      }
+      .display {
+        background: #f1f3f6;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .table-section {
+        padding-top: 5px;
+        border-top: 1px solid #ddd;
+      }
+      .table-section h2 {
+        text-align: center;
+        color: #333;
+        font-size: 26px;
+        margin-bottom: 15px;
+      }
+      .tables {
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+        background: #f1f3f6;
+        border-radius: 8px;
+        line-height: 1.8;
+      }
+      .table-button {
+        width: 100%;
+        background: #16a34a;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .table-button:hover {
+        background: #15803d;
+      }
+
+       @media (max-width: 768px){
+      .calculator {
+        width: 500px;
+        min-height: 100vh;
+
+       }
+      }
+    </style>
+
+    <script>
+      function calculate(num1, num2, operator) {
+        if (operator == "+") {
+          return num1 + num2;
+        } else if (operator == "-") {
+          return num1 - num2;
+        } else if (operator == "*") {
+          return num1 * num2;
+        } else if (operator == "/") {
+          return num1 / num2;
+        } else {
+          return "Invalid Operator";
+        }
+      }
+
+      function showResult(operator) {
+        let num1 = Number(document.getElementById("num1").value);
+        let num2 = Number(document.getElementById("num2").value);
+
+        let result = calculate(num1, num2, operator);
+
+        document.getElementById("result").innerHTML =
+          num1 + "" + operator + "" + num2 + "=" + result;
+      }
+      function showTable() {
+        let number = Number(document.getElementById("tablenumber").value);
+
+        let table = "";
+
+        for (let i = 1; i <= 10; i++) {
+          table += number + " × " + i + " = " + number * i + "<br>";
+        }
+
+        document.getElementById("table").innerHTML = table;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="calculator">
+      <h1>Calculator</h1>
+      <input type="number" id="num1" placeholder="Enter first number" />
+      <input type="number" id="num2" placeholder="Enter second number" />
+
+      <div class="buttons">
+        <button onclick="showResult('+')">+</button>
+        <button onclick="showResult('-')">−</button>
+        <button onclick="showResult('*')">*</button>
+        <button onclick="showResult('/')">÷</button>
+      </div>
+      <div class="display" id="result">Result</div>
+      <div class="table-section">
+        <h2>Multiplication Table</h2>
+
+        <input
+          type="number"
+          id="tablenumber"
+          placeholder="Enter table number"
+        />
+        <button onclick="showTable()" class="table-button">Show Table</button>
+
+        <div class="tables" id="table"></div>
+      </div>
+    </div>
+  </body>
+</html>
