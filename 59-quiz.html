@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JavaScript Quiz</title>
+    <script>
+      function checkQuiz() {
+        let score = 0;
+
+        let q1 = document.querySelector('input[name="q1"]:checked');
+
+        let q2 = document.querySelector('input[name="q2"]:checked');
+
+        let q3 = document.querySelector('input[name="q3"]:checked');
+
+        let q4 = document.querySelector('input[name="q4"]:checked');
+
+        let q5 = document.querySelector('input[name="q5"]:checked');
+
+        if (
+          q1 === null ||
+          q2 === null ||
+          q3 === null ||
+          q4 === null ||
+          q5 === null
+        ) {
+          document.getElementById("result").innerHTML =
+            "Please answer all questions.";
+
+          return;
+        }
+
+        if (q1.value === "let") {
+          score++;
+        }
+
+        if (q2.value === "=>") {
+          score++;
+        }
+
+        if (q3.value === "getElementById") {
+          score++;
+        }
+
+        if (q4.value === "return") {
+          score++;
+        }
+
+        if (q5.value === "while") {
+          score++;
+        }
+
+        document.getElementById("result").innerHTML =
+          "Your Score: " + score + " / 5";
+      }
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #dbeafe, #eef2ff);
+      }
+
+      .quiz {
+        width: 600px;
+        max-width: 100%;
+        margin: auto;
+        padding: 30px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      h1 {
+        text-align: center;
+        color: #1e293b;
+        margin-bottom: 30px;
+      }
+
+      .question {
+        margin-bottom: 25px;
+        padding: 15px;
+        background: #f8fafc;
+        border-radius: 10px;
+      }
+
+      .question p {
+        font-weight: bold;
+        color: #334155;
+      }
+
+      label {
+        display: block;
+        margin: 12px 0;
+        cursor: pointer;
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        background: #2563eb;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #1d4ed8;
+      }
+
+      #result {
+        margin-top: 20px;
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="quiz">
+      <h1>JavaScript Quiz</h1>
+
+      <div class="question">
+        <p>1. Which keyword is used to declare a variable?</p>
+
+        <label>
+          <input type="radio" name="q1" value="let" />
+          let
+        </label>
+
+        <label>
+          <input type="radio" name="q1" value="print" />
+          print
+        </label>
+
+        <label>
+          <input type="radio" name="q1" value="echo" />
+          echo
+        </label>
+      </div>
+
+      <div class="question">
+        <p>2. Which symbol is used for an Arrow Function?</p>
+
+        <label>
+          <input type="radio" name="q2" value="=>" />
+          =>
+        </label>
+
+        <label>
+          <input type="radio" name="q2" value="==" />
+          ==
+        </label>
+
+        <label>
+          <input type="radio" name="q2" value="=" />
+          =
+        </label>
+      </div>
+
+      <div class="question">
+        <p>3. Which method finds an HTML element by its ID?</p>
+
+        <label>
+          <input type="radio" name="q3" value="getElementById" />
+          getElementById()
+        </label>
+
+        <label>
+          <input type="radio" name="q3" value="getElement" />
+          getElement()
+        </label>
+
+        <label>
+          <input type="radio" name="q3" value="findId" />
+          findId()
+        </label>
+      </div>
+
+      <div class="question">
+        <p>4. Which keyword is used to return a value from a function?</p>
+
+        <label>
+          <input type="radio" name="q4" value="return" />
+          return
+        </label>
+
+        <label>
+          <input type="radio" name="q4" value="value" />
+          value
+        </label>
+
+        <label>
+          <input type="radio" name="q4" value="result" />
+          result
+        </label>
+      </div>
+
+      <div class="question">
+        <p>5. Which loop runs while a condition is true?</p>
+
+        <label>
+          <input type="radio" name="q5" value="while" />
+          while
+        </label>
+
+        <label>
+          <input type="radio" name="q5" value="switch" />
+          switch
+        </label>
+
+        <label>
+          <input type="radio" name="q5" value="function" />
+          function
+        </label>
+      </div>
+
+      <button onclick="checkQuiz()">Submit Quiz</button>
+
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
